@@ -54,7 +54,7 @@
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN  32
+  #define Z_MIN_PROBE_PIN  33
 #endif
 
 //
@@ -72,6 +72,14 @@
 #define Z_DIR_PIN          56
 #define Z_ENABLE_PIN       62
 
+#define Z2_STEP_PIN        29
+#define Z2_DIR_PIN         28
+#define Z2_ENABLE_PIN      39
+
+#ifndef Z_MIN_PROBE_PIN
+  #define Z_MIN_PROBE_PIN  33
+#endif
+
 #define E0_STEP_PIN        23
 #define E0_DIR_PIN         22
 #define E0_ENABLE_PIN      24
@@ -80,9 +88,9 @@
 #define E1_DIR_PIN         25
 #define E1_ENABLE_PIN      27
 
-#define E2_STEP_PIN        29
-#define E2_DIR_PIN         28
-#define E2_ENABLE_PIN      39
+// #define E2_STEP_PIN        29
+// #define E2_DIR_PIN         28
+// #define E2_ENABLE_PIN      39
 
 //
 // Temperature Sensors
